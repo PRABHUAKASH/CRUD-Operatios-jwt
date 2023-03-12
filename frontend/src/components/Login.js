@@ -17,7 +17,7 @@ const Login = () => {
   };
   const sendRequest = async () => {
     const res = await axios
-      .post('/users/login', {
+      .post('https://jwt-backend-taeo.onrender.com/users/login', {
         email: inputs.email,
         password: inputs.password,
       })

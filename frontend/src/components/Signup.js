@@ -24,7 +24,7 @@ const Signup = () => {
   };
   const sendRequest = async () => {
     const res = await axios
-      .post('/users/signup', {
+      .post('https://jwt-backend-taeo.onrender.com/users/signup', {
         firstName: inputs.firstName,
         middleName: inputs.middleName,
         lastName: inputs.lastName,

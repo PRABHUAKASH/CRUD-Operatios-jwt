@@ -6,7 +6,7 @@ const Welcome = () => {
   const [user, setUser] = useState();
   const sendRequest = async () => {
     const res = await axios
-      .get('http://localhost:8800/users/user', {
+      .get('/users/user', {
         withCredentials: true,
       })
       .catch((err) => console.log(err));

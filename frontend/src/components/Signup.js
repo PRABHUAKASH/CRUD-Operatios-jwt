@@ -24,7 +24,7 @@ const Signup = () => {
   };
   const sendRequest = async () => {
     const res = await axios
-      .post('http://localhost:8800/users/signup', {
+      .post('/users/signup', {
         firstName: inputs.firstName,
         middleName: inputs.middleName,
         lastName: inputs.lastName,
